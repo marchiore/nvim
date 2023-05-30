@@ -1,10 +1,16 @@
 return {
-  -- Fuzzy Finder (files, lsp, etc)
+  -- {
+  --   'navarasu/onedark.nvim',
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd('colorscheme onedark')
+  --   end,
+  -- },
   {
-    'rose-pine/neovim',
-    dependencies = { 'rose-pine/neovim' },
+    'rose-pine/neovim', 
+    priority = 1000,
     config = function()
-	vim.cmd('colorscheme rose-pine')
+      vim.cmd('colorscheme rose-pine')
     end,
   },
 }
