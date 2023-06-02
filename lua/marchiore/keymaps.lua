@@ -76,3 +76,6 @@ vim.keymap.set('n', '<C-kPlus>', ':vertical resize +2<CR>')
 
 -- Leave terminal
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+
+vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>//g<Left><Left>]], { desc = 'Replace text on cursor' })
+
